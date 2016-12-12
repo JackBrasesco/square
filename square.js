@@ -2,7 +2,7 @@
 
 var player = $("#player");
 
-var player
+var playerX = Math.floor(Math.random() 
 
 $(document).keyDown(function(keyPress) {
   if (keyPress.keyCode = 68) {
