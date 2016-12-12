@@ -1,3 +1,7 @@
 //PLAYER MOVEMENT 
 
-var player = $
+var player = $("#player");
+
+$(document).keyDown(function(keyPress) {
+  if (keyPress.keyCode
+})
