@@ -24,6 +24,7 @@ $(document).keydown(function(keyPress) {
     playerY = playerY - 10;
   }
   if (keyPress.keyCode == 83) {
-    player.css("top",playerX + 
+    player.css("top",playerX + 10);
+    playerY = (playerY + 10);
   }
 })
