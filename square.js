@@ -1,5 +1,9 @@
 //SPRITE DUDE
 
+var food = document.getElementById("food");
+
+var ctx = food.getContext("2d");
+
 function Sprite(x,y,w,h,color){
   this.x=x;
   this.y=y;
@@ -17,9 +21,6 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
 //PLAYER MOVEMENT 
 
 var player = new Sprite(Math.floor(Math.random() * 800),Math.floor(Math.random() * 800),50,50,"#FF0000")
-player.drawMe(ctx,50,50)
+player.drawMe(ctx,0,0)
 //FOOD
 
-var food = document.getElementById("food");
-
-var ctx = food.getContext("2D");
