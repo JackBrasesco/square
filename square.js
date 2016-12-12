@@ -12,6 +12,7 @@ player.css("bottom", playerY);
 
 $(document).keyDown(function(keyPress) {
   if (keyPress.keyCode = 68) {
-    player.css("left",)
+    player.css("left", playerX + 5)
+    playerX = player
   }
 })
