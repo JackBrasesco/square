@@ -5,3 +5,9 @@
   border: 2px black solid;
   position: relative;
 }
+
+#food {
+  position: relative;
+  left: 0;
+  top: 0;
+}
