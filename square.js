@@ -1,0 +1,3 @@
+//PLAYER MOVEMENT 
+
+var player = $
