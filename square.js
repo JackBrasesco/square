@@ -17,7 +17,7 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
 //PLAYER MOVEMENT 
 
 var player = new Sprite(Math.floor(Math.random() * 800),Math.floor(Math.random() * 800),50,50,"#FF0000")
-player.drawMe(ctx)
+player.drawMe(ctx,50,50)
 //FOOD
 
 var food = document.getElementById("food");
