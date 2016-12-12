@@ -6,13 +6,13 @@ var playerX = Math.floor(Math.random() * 1080);
 
 var playerY = Math.floor(Math.random() * 960);
 
-player.css("left", playerX);
+player.css("left", parseInt(playerX));
 
 player.css("bottom", playerY);
 
-$(document).keyDown(function(keyPress) {
-  if (keyPress.keyCode = 68) {
+$(document).keydown(function(keyPress) {
+  if (keyPress.keyCode == 68) {
     player.css("left", playerX + 5)
-    playerX = player
+    playerX = playerX + 5
   }
 })
