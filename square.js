@@ -28,3 +28,6 @@ $(document).keydown(function(keyPress) {
     playerY = (playerY + 10);
   }
 })
+
+//FOOD
+
