@@ -15,5 +15,7 @@ $(document).keydown(function(keyPress) {
     player.css("left", playerX + 10)
     playerX = playerX + 10
   }
-  if (k
+  if (keyPress.keyCode == 83) {
+    player.css("left", playerX - 10)
+  }
 })
