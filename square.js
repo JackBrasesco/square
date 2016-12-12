@@ -15,16 +15,16 @@ $(document).keydown(function(keyPress) {
     player.css("left", playerX + 10)
     playerX = playerX + 10
   }
-  if (keyPress.keyCode == 83) {
+  if (keyPress.keyCode == 65) {
     player.css("left", playerX - 10);
     playerX = playerX - 10;
   }
   if (keyPress.keyCode == 87) {
-    player.css("top", playerX - 10);
+    player.css("top", playerY - 10);
     playerY = playerY - 10;
   }
   if (keyPress.keyCode == 83) {
-    player.css("top",playerX + 10);
+    player.css("top", playerY + 10);
     playerY = (playerY + 10);
   }
 })
