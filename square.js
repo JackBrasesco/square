@@ -20,6 +20,10 @@ $(document).keydown(function(keyPress) {
     playerX = playerX - 10;
   }
   if (keyPress.keyCode == 87) {
-    player.css("top", playerX + 10
+    player.css("top", playerX - 10);
+    playerY = playerY - 10;
+  }
+  if (keyPress.keyCode == 83) {
+    player.css("top",playerX + 
   }
 })
