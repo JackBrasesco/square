@@ -31,3 +31,6 @@ $(document).keydown(function(keyPress) {
 
 //FOOD
 
+var food = $("#food");
+
+var ctx = food.getContext("2D");
