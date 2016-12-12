@@ -2,9 +2,9 @@
 
 var player = $("#player");
 
-var playerX = Math.floor(Math.random() * 1080);
+var playerX = Math.floor(Math.random() * 300);
 
-var playerY = Math.floor(Math.random() * 960);
+var playerY = Math.floor(Math.random() * 300);
 
 player.css("left", parseInt(playerX));
 
