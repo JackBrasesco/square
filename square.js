@@ -2,17 +2,18 @@
 
 var player = $("#player");
 
-var playerX = Math.floor(Math.random() * 300);
+var playerX = Math.floor(Math.random() * 500);
 
-var playerY = Math.floor(Math.random() * 300);
+var playerY = Math.floor(Math.random() * 500);
 
 player.css("left", parseInt(playerX));
 
-player.css("bottom", playerY);
+player.css("top", playerY);
 
 $(document).keydown(function(keyPress) {
   if (keyPress.keyCode == 68) {
-    player.css("left", playerX + 5)
-    playerX = playerX + 5
+    player.css("left", playerX + 10)
+    playerX = playerX + 10
   }
+  if (k
 })
