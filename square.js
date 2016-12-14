@@ -33,10 +33,13 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
 
 var player = new Sprite(playerX,playerY,50,50,"#FF0000")
 player.drawMe(ctx,0,0)
+console.log(player)
 
 $(document).keydown(function(pressed) {
   if (pressed.keyCode == 68) {
+    console.log("hi")
     playerX = playerX + 5
+    console.log(player)
     player.drawMe(ctx,0,0)
   }
 })
