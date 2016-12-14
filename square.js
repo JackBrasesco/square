@@ -41,7 +41,12 @@ $(document).keydown(function(pressed) {
     player.drawMe(ctx,0,0)
   }
   if (pressed.keyCode == 83) {
-    pl
+    playerY = playerY - 5
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+    player.drawMe(ctx,0,0)
+  }
+  if (pressed.keyCode == 65) {
+    playerX = playerX - 5
   }
 })
 
