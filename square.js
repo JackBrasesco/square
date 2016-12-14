@@ -4,6 +4,9 @@ var food = document.getElementById("food");
 
 var ctx = food.getContext("2d");
 
+var playerX = Math.floor(math.random() * 800)
+var playerY = M
+
 function Sprite(x,y,w,h,color){
   this.x=x;
   this.y=y;
