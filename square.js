@@ -40,6 +40,7 @@ $(document).keydown(function(pressed) {
     console.log("hi")
     playerX = playerX + 5
     console.log(player)
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
 })
