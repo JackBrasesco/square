@@ -35,7 +35,10 @@ var player = new Sprite(playerX,playerY,50,50,"#FF0000")
 player.drawMe(ctx,0,0)
 
 $(document).keydown(function(pressed) {
-  if (p
+  if (pressed.keyCode == 68) {
+    playerX = playerX + 5
+    player.drawMe(ctx,0,0)
+  }
 })
 
 //FOOD
