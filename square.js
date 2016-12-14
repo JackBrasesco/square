@@ -17,8 +17,9 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
   dy= dy ? dy : 0;
   ctx.beginPath();
   ctx.moveTo(this.x,this.y);
-  ctx.lineTo(this.x, this.y - this.h)
-  ctx.stroke()
+  ctx.lineTo(this.x, this.y + this.h);
+  ctx.strokeStyle("#000000");
+  ctx.stroke();
   ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
 }
 
