@@ -29,10 +29,10 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
 
 //PLAYER MOVEMENT 
 
-var playerX = (Math.floor(Math.random() * 800))
-var playerY = (Math.floor(Math.random() * 800))
+var playerL = (Math.floor(Math.random() * 800))
+var playerT = (Math.floor(Math.random() * 800))
 
-var player = new ((playerX),(playerY),50,50,"#FF0000")
+var player = new (playerL,playerT,50,50,"#FF0000")
 player.drawMe(ctx,0,0)
 
 var food = new Sprite(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
