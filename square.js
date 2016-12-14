@@ -34,7 +34,9 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
 var player = new Sprite(playerX,playerY,50,50,"#FF0000")
 player.drawMe(ctx,0,0)
 
-
+$(document).keydown(function(pressed) {
+  if (p
+})
 
 //FOOD
 
