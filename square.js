@@ -16,6 +16,9 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
   dx= dx ? dx : 0;
   dy= dy ? dy : 0;
   ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = "black";
+  ctx.stroke();
 }
 
 //PLAYER MOVEMENT 
@@ -24,5 +27,6 @@ var player = new Sprite(Math.floor(Math.random() * 800),Math.floor(Math.random()
 player.drawMe(ctx,0,0)
 
 var food = new Sprite(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+food.drawMe(ctx,0,0)
 //FOOD
 
