@@ -40,13 +40,20 @@ $(document).keydown(function(pressed) {
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
-  if (pressed.keyCode == 83) {
+  if (pressed.keyCode == 87) {
     playerY = playerY - 5
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
   if (pressed.keyCode == 65) {
     playerX = playerX - 5
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+    player.drawMe(ctx,0,0)
+  }
+  if (pressed.keyCode == 83) {
+    playerY = playerY + 5
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+    player.drawMe(ctx,0,0)
   }
 })
 
