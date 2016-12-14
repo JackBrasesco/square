@@ -23,6 +23,5 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
 var player = new Sprite(Math.floor(Math.random() * 800),Math.floor(Math.random() * 800),50,50,"#FF0000")
 player.drawMe(ctx,0,0)
 
-player.css({border: "2px black solid"});
 //FOOD
 
