@@ -37,23 +37,25 @@ player.drawMe(ctx,0,0)
 $(document).keydown(function(pressed) {
   if (pressed.keyCode == 68) {
     playerX = playerX + 5
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, 800, 800)
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
   if (pressed.keyCode == 87) {
     playerY = playerY - 5
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    ctx.clearRect(0, 0, 800, 800)
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
   if (pressed.keyCode == 65) {
     playerX = playerX - 5
+    ctx.clearRect(0, 0, 800, 800)
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
   if (pressed.keyCode == 83) {
     playerY = playerY + 5
+    ctx.clearRect(0, 0, 800, 800)
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
