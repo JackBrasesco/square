@@ -15,10 +15,10 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
   ctx.fillStyle = this.color;
   dx= dx ? dx : 0;
   dy= dy ? dy : 0;
-  ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
   ctx.lineWidth = 5;
   ctx.strokeStyle = "black";
   ctx.stroke();
+  ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
 }
 
 //PLAYER MOVEMENT 
