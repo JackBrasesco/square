@@ -6,14 +6,12 @@
   position: relative;
 }
 
-#food {
-  position: relative;
-  left: 0;
-  top: 0;
-}
+
 
 .canvas {
   position: absolute;
   left:0;
   top:0;
+  width: 1080;
+  height: 8
 }
