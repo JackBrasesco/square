@@ -114,6 +114,7 @@ if (playerLeft < 0) {
   player.drawMe(ctx,0,0)
 }
 if (playerRight > 800) {
+  console.log("ouch")
   playerX = 800 - playerWidth 
   var player = new Sprite(playerX,playerY,50,50,"#FF0000")
   player.drawMe(ctx,0,0)
@@ -141,9 +142,7 @@ setInterval(function() {
 }, 5000);
 
 var foodCount = 0
-console.log(foodCount)
 
 function foodTick() {
   foodCount = foodCount + 1
-  console.log(foodCount)
 }
