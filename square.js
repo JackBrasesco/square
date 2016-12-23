@@ -130,7 +130,9 @@ if (playerBottom < 0) {
   player.drawMe(ctx,0,0)
 }
 //FOOD
-
+setInterval(function() {
+  console.log(playerRight)
+},100)
 
 
 setInterval(function() {
