@@ -95,5 +95,13 @@ $(document).keydown(function(pressed) {
 //FOOD
 
 var f1 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
-console.log(f1)
+var f2 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f3 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f4 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f5 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f6 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f7 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f8 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f9 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+var f10 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
 f1.drawMe(ctx2,0,0)
