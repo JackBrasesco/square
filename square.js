@@ -105,8 +105,9 @@ setInterval(function() {
 }, 5000);
 
 var foodCount = 0
+console.log(foodCount)
 
 function foodTick() {
-  var foodCount = foodCount + 1
+  foodCount = foodCount + 1
   console.log(foodCount)
 }
