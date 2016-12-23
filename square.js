@@ -94,19 +94,20 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
-//fdafdsafdfsdf
-
-$(function() {
-  var canvas1 = $('<canvas/>', { id: 'mycanvas', height: 500, width: 500});
-  canvas1.css('border', 'solid 1px red');
-  $('body').append(canvas1); 
-  var canvas = document.getElementById(mycanvas);
-  var ctx = canvas1.getContext('2d');
-});
 
 
+setInterval(function() {
+  if (foodCount < 21) {
+    var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00");
+    f1.drawMe(ctx2,0,0);
+    foodTick();
+  }
+}, 5000);
 
-//dfadfsdafdasfdafsadfdsfadfasdf
+var foodCount = 0
+console.log(foodCount)
 
-
-
+function foodTick() {
+  foodCount = foodCount + 1
+  console.log(foodCount)
+}
