@@ -110,13 +110,13 @@ if (playerLeft < 0) {
   var player = new Sprite(playerX,playerY,50,50,"#FF0000")
   player.drawMe(ctx,0,0)
 }
-if (playerRight > 1000) {
-  playerX = 1000 - playerWidth 
+if (playerRight > 800) {
+  playerX = 800 - playerWidth 
   var player = new Sprite(playerX,playerY,50,50,"#FF0000")
   player.drawMe(ctx,0,0)
 }
-if (playerTop > 1000) {
-  playerY = 1000 - playerHeight
+if (playerTop > 800) {
+  playerY = 800 - playerHeight
   var player = new Sprite(playerX,playerY,50,50,"#FF0000")
   player.drawMe(ctx,0,0)
 }
