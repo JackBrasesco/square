@@ -41,9 +41,6 @@ var foof = document.getElementById("food2");
 
 var ctx2 = foof.getContext("2d");
 
-var playerX = Math.floor(Math.random() * 800);
-var playerY = Math.floor(Math.random() * 800);
-
 function Edible(x,y,w,h,color){
   this.x=x;
   this.y=y;
