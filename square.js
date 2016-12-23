@@ -94,9 +94,15 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
-var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00")
+
 
 setInterval(function() {
+  var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00")
   f1.drawMe(ctx2,0,0)
-  console.log("hi
+  console.log("hi")
 }, 5000);
+
+va
+function foodMax() {
+  
+}
