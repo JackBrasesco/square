@@ -99,7 +99,14 @@ $(document).keydown(function(pressed) {
 
 var playerLeft = playerX
 
-var playerRight = playerX + playerHeight
+var playerRight = playerX + playerWidth
+
+var playerBottom = playerY
+
+var playerTop = playerY + playerHeight
+
+if (playerLeft < 0) {
+  playerX = 0
 
 //FOOD
 
