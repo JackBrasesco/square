@@ -122,14 +122,14 @@ setInterval(function() {
      var player = new Sprite(playerX,playerY,50,50,"#FF0000")
      player.drawMe(ctx,0,0)
    }
-  if (playerRight > 800) {
+  if (playerRight > 1000) {
     console.log("ouch")
-    playerX = 800 - playerWidth 
+    playerX = 1000 - playerWidth 
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
-  if (playerTop > 800) {
-    playerY = 800 - playerHeight
+  if (playerTop > 1000) {
+    playerY = 1000 - playerHeight
     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
     player.drawMe(ctx,0,0)
   }
