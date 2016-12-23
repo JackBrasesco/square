@@ -55,10 +55,12 @@ Edible.prototype.drawMe = function (ctx,dx,dy){
   ctx2.lineTo(this.x + this.w, this.y + this.h);
   ctx2.lineTo(this.x + this.w, this.y);
   ctx2.lineTo(this.x,this.y)
+  ctx2.moveTo(800,800)
+  ctx2.lineTo(800,0)
   ctx2.lineWidth = 5
   ctx2.stroke();
   ctx2.fillRect(this.x+dx,this.y+dy,this.w,this.h);
-  ctx2.moveTo(800,800)
+ 
 }
 
 //PLAYER MOVEMENT 
