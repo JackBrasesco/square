@@ -96,5 +96,7 @@ $(document).keydown(function(pressed) {
 
 var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00")
 
-
-f1.drawMe(ctx2,0,0)
+setInterval(function() {
+  f1.drawMe(ctx2,0,0)
+  console.log("hi
+}, 5000);
