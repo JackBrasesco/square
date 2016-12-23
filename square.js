@@ -27,6 +27,10 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
   ctx.lineWidth = 5
   ctx.stroke();
   ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
+  ctx.moveTo(1000,1000)
+  ctx.lineTo(1000,0)
+  ctx.lin
+  ctx.lineWidth = 5
 }
 
 //SPRITE FOR FOOD CANVAS
@@ -55,9 +59,6 @@ Edible.prototype.drawMe = function (ctx,dx,dy){
   ctx2.lineTo(this.x + this.w, this.y + this.h);
   ctx2.lineTo(this.x + this.w, this.y);
   ctx2.lineTo(this.x,this.y)
-  ctx2.moveTo(800,800)
-  ctx2.lineTo(800,0)
-  ctx2.lineWidth = 5
   ctx2.stroke();
   ctx2.fillRect(this.x+dx,this.y+dy,this.w,this.h);
  
