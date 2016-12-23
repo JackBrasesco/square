@@ -94,5 +94,5 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
-var food = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
-food.drawMe(ctx2,0,0)
+var edible = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+edible.drawMe(ctx2,0,0)
