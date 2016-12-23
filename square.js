@@ -108,6 +108,18 @@ var playerBottom = playerY
 
 var playerTop = playerY + playerHeight
 
+setInterval(function() {
+   playerLeft = playerX
+
+   playerRight = playerX + playerWidth
+
+   playerBottom = playerY
+
+   playerTop = playerY + playerHeight
+},100)
+
+
+
 if (playerLeft < 0) {
   playerX = 0
   var player = new Sprite(playerX,playerY,50,50,"#FF0000")
@@ -130,9 +142,7 @@ if (playerBottom < 0) {
   player.drawMe(ctx,0,0)
 }
 //FOOD
-setInterval(function() {
-  console.log(playerRight)
-},100)
+
 
 
 setInterval(function() {
