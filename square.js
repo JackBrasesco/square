@@ -92,6 +92,10 @@ $(document).keydown(function(pressed) {
   }
 })
 
+//boundries
+
+if (PlayerX
+
 //FOOD
 
 
