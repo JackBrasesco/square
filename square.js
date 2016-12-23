@@ -38,7 +38,7 @@ var ctx2 = foof.getContext("2d");
 var playerX = Math.floor(Math.random() * 800);
 var playerY = Math.floor(Math.random() * 800);
 
-function Sprite(x,y,w,h,color){
+function Edible(x,y,w,h,color){
   this.x=x;
   this.y=y;
   this.w=w;
@@ -46,18 +46,18 @@ function Sprite(x,y,w,h,color){
   this.color=color ? color : "#000";
 }
 Sprite.prototype.drawMe = function (ctx,dx,dy){
-  ctx.fillStyle = this.color;
+  ctx2.fillStyle = this.color;
   dx= dx ? dx : 0;
   dy= dy ? dy : 0;
-  ctx.beginPath();
-  ctx.moveTo(this.x,this.y);
-  ctx.lineTo(this.x, this.y + this.h);
-  ctx.lineTo(this.x + this.w, this.y + this.h);
-  ctx.lineTo(this.x + this.w, this.y);
-  ctx.lineTo(this.x,this.y)
-  ctx.lineWidth = 5
-  ctx.stroke();
-  ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
+  ctx2.beginPath();
+  ctx2.moveTo(this.x,this.y);
+  ctx2.lineTo(this.x, this.y + this.h);
+  ctx2.lineTo(this.x + this.w, this.y + this.h);
+  ctx2.lineTo(this.x + this.w, this.y);
+  ctx2.lineTo(this.x,this.y)
+  ctx2.lineWidth = 5
+  ctx2.stroke();
+  ctx2.fillRect(this.x+dx,this.y+dy,this.w,this.h);
 }
 
 //PLAYER MOVEMENT 
@@ -94,5 +94,5 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
-var food = new Sprite(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
-food.drawMe(ctx,0,0)
+var food = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+food.drawMe(ctx2,0,0)
