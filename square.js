@@ -112,7 +112,11 @@ if (playerRight > 1000) {
   playerX = 1000 - playerWidth 
 }
 if (playerTop > 1000) {
-  playerY = 100
+  playerY = 1000 - playerHeight
+}
+if (playerBottom < 0) {
+  playerY = 0
+}
 //FOOD
 
 
