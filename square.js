@@ -29,8 +29,10 @@ Sprite.prototype.drawMe = function (ctx,dx,dy){
   ctx.fillRect(this.x+dx,this.y+dy,this.w,this.h);
   ctx.moveTo(1000,1000)
   ctx.lineTo(1000,0)
-  ctx.lin
-  ctx.lineWidth = 5
+  ctx.lineTo(0,0)
+  ctx.lineTo(0,1000)
+  ctx.lineTo(1000,1000)
+  ctx.lineWidth = 10
 }
 
 //SPRITE FOR FOOD CANVAS
