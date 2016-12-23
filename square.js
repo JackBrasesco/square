@@ -97,10 +97,11 @@ $(document).keydown(function(pressed) {
 
 
 setInterval(function() {
-  if (foodCount < 21)
-  var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00")
-  f1.drawMe(ctx2,0,0)
-  
+  if (foodCount < 21) {
+    var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00");
+    f1.drawMe(ctx2,0,0);
+    foodTick();
+  }
 }, 5000);
 
 var foodCount = 0
