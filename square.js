@@ -116,31 +116,32 @@ setInterval(function() {
    playerBottom = playerY
 
    playerTop = playerY + playerHeight
-},100)
+   
+   if (playerLeft < 0) {
+     playerX = 0
+     var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+     player.drawMe(ctx,0,0)
+   }
+  if (playerRight > 800) {
+    console.log("ouch")
+    playerX = 800 - playerWidth 
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+    player.drawMe(ctx,0,0)
+  }
+  if (playerTop > 800) {
+    playerY = 800 - playerHeight
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+    player.drawMe(ctx,0,0)
+  }
+  if (playerBottom < 0) {
+    playerY = 0
+    var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+    player.drawMe(ctx,0,0)
+  }
+},10)
 
 
 
-if (playerLeft < 0) {
-  playerX = 0
-  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
-  player.drawMe(ctx,0,0)
-}
-if (playerRight > 800) {
-  console.log("ouch")
-  playerX = 800 - playerWidth 
-  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
-  player.drawMe(ctx,0,0)
-}
-if (playerTop > 800) {
-  playerY = 800 - playerHeight
-  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
-  player.drawMe(ctx,0,0)
-}
-if (playerBottom < 0) {
-  playerY = 0
-  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
-  player.drawMe(ctx,0,0)
-}
 //FOOD
 
 
