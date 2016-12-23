@@ -96,7 +96,11 @@ $(document).keydown(function(pressed) {
 
 //fdafdsafdfsdf
 
-$('<canvas/>', { id: 'hi', height: 500, width: 200});
+$(function() {
+  var canvas1 = $('<canvas/>', { id: 'mycanvas', height: 500, width: 500});
+  canvas1.css('border', 'solid 1px red');
+  $('body').append(canvas1); 
+});
 
 
 var canvas = document.getElementById(hi);
