@@ -96,14 +96,14 @@ $(document).keydown(function(pressed) {
 
 //fdafdsafdfsdf
 
-var elementID = 'canvas' + $('canvas').length;
+var elementID = 'canvas' + "1";
 
 $('<canvas>').attr({
   id: elementID
 }).css({
-  width: 10px,
-  height: 10px"
-}).appendTo('#orkw_area');
+  width: "10px",
+  height: "10px"
+})
 
 var canvas = document.getElementById(elementID);
 var ctx = canvas.getContext('2d');
