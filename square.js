@@ -107,15 +107,23 @@ var playerTop = playerY + playerHeight
 
 if (playerLeft < 0) {
   playerX = 0
+  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+  player.drawMe(ctx,0,0)
 }
 if (playerRight > 1000) {
   playerX = 1000 - playerWidth 
+  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+  player.drawMe(ctx,0,0)
 }
 if (playerTop > 1000) {
   playerY = 1000 - playerHeight
+  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+  player.drawMe(ctx,0,0)
 }
 if (playerBottom < 0) {
   playerY = 0
+  var player = new Sprite(playerX,playerY,50,50,"#FF0000")
+  player.drawMe(ctx,0,0)
 }
 //FOOD
 
