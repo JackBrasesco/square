@@ -94,33 +94,20 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
-/
+//fdafdsafdfsdf
 
 var elementID = 'canvas' + $('canvas').length;
 
 $('<canvas>').attr({
   id: elementID
 }).css({
-  width: rectWidth + 'px',
-  height: rectHeight + 'px'
+  width: 10px,
+  height: 10px"
 }).appendTo('#orkw_area');
 
 var canvas = document.getElementById(elementID);
 var ctx = canvas.getContext('2d');
 //dfadfsdafdasfdafsadfdsfadfasdf
 
-setInterval(function() {
-  if (foodCount < 21) {
-    var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00");
-    f1.drawMe(ctx2,0,0);
-    foodTick();
-  }
-}, 5000);
 
-var foodCount = 0
-console.log(foodCount)
 
-function foodTick() {
-  foodCount = foodCount + 1
-  console.log(foodCount)
-}
