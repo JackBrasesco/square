@@ -94,7 +94,20 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
+/
 
+var elementID = 'canvas' + $('canvas').length;
+
+$('<canvas>').attr({
+  id: elementID
+}).css({
+  width: rectWidth + 'px',
+  height: rectHeight + 'px'
+}).appendTo('#orkw_area');
+
+var canvas = document.getElementById(elementID);
+var ctx = canvas.getContext('2d');
+//dfadfsdafdasfdafsadfdsfadfasdf
 
 setInterval(function() {
   if (foodCount < 21) {
