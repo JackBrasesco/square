@@ -107,7 +107,12 @@ var playerTop = playerY + playerHeight
 
 if (playerLeft < 0) {
   playerX = 0
-
+}
+if (playerRight > 1000) {
+  playerX = 1000 - playerWidth 
+}
+if (playerTop > 1000) {
+  playerY = 100
 //FOOD
 
 
