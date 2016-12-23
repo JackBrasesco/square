@@ -94,7 +94,9 @@ $(document).keydown(function(pressed) {
 
 //boundries
 
-if (PlayerX
+var playerLeft = playerX
+
+var player Right
 
 //FOOD
 
