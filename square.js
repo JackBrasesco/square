@@ -65,6 +65,9 @@ Edible.prototype.drawMe = function (ctx,dx,dy){
 var player = new Sprite(playerX,playerY,50,50,"#FF0000")
 player.drawMe(ctx,0,0)
 
+var playerHeight = 50
+var playerWidth = 50 
+
 $(document).keydown(function(pressed) {
   if (pressed.keyCode == 68) {
     playerX = playerX + 5
@@ -96,7 +99,7 @@ $(document).keydown(function(pressed) {
 
 var playerLeft = playerX
 
-var player Right
+var playerRight = playerX + playerHeight
 
 //FOOD
 
