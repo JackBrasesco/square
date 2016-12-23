@@ -100,11 +100,12 @@ $(function() {
   var canvas1 = $('<canvas/>', { id: 'mycanvas', height: 500, width: 500});
   canvas1.css('border', 'solid 1px red');
   $('body').append(canvas1); 
+  var canvas = document.getElementById(mycanvas);
+  var ctx = canvas1.getContext('2d');
 });
 
 
-var canvas = document.getElementById(hi);
-var ctx = canvas.getContext('2d');
+
 //dfadfsdafdasfdafsadfdsfadfasdf
 
 
