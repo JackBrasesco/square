@@ -97,12 +97,14 @@ $(document).keydown(function(pressed) {
 
 
 setInterval(function() {
+  if (foodCount < 21)
   var f1 = new Edible(Math.floor(Math.random() * 990), Math.floor(Math.random() * 990), 10,10, "#00FF00")
   f1.drawMe(ctx2,0,0)
-  console.log("hi")
+  
 }, 5000);
 
-va
-function foodMax() {
-  
+var foodCount = 0
+
+function foodTick() {
+  var foodCount = foodCount + 1
 }
