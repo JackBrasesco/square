@@ -108,4 +108,5 @@ var foodCount = 0
 
 function foodTick() {
   var foodCount = foodCount + 1
+  console.log(foodCount)
 }
