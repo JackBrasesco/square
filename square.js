@@ -96,16 +96,10 @@ $(document).keydown(function(pressed) {
 
 //fdafdsafdfsdf
 
-var elementID = 'canvas' + "1";
+$('<canvas/>', { id: 'hi', height: 500, width: 200});
 
-$('<canvas>').attr({
-  id: elementID
-}).css({
-  width: "10px",
-  height: "10px"
-})
 
-var canvas = document.getElementById(elementID);
+var canvas = document.getElementById(hi);
 var ctx = canvas.getContext('2d');
 //dfadfsdafdasfdafsadfdsfadfasdf
 
