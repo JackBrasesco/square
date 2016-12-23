@@ -45,7 +45,7 @@ function Edible(x,y,w,h,color){
   this.h=h;
   this.color=color ? color : "#000";
 }
-Sprite.prototype.drawMe = function (ctx,dx,dy){
+Edible.prototype.drawMe = function (ctx,dx,dy){
   ctx2.fillStyle = this.color;
   dx= dx ? dx : 0;
   dy= dy ? dy : 0;
@@ -94,5 +94,6 @@ $(document).keydown(function(pressed) {
 
 //FOOD
 
-var edible = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
-edible.drawMe(ctx2,0,0)
+var f1 = new Edible(Math.floor(Math.random() * 800), Math.floor(Math.random() * 800), 10,10, "#00FF00")
+console.log(f1)
+f1.drawMe(ctx2,0,0)
